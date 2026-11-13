@@ -61,7 +61,7 @@ class Node:
             style = re.sub(r'\s+', '', node.attrs.get('style', '').lower())
             if (node.tag in EXCLUDED or 'hidden' in node.attrs or
                     node.attrs.get('aria-hidden', '').lower() == 'true' or
-                    set(node.attrs.get('class', '').split()).intersection({'halloween-greeting', 'form-success'}) or
+                    set(node.attrs.get('class', '').split()).intersection({'form-success'}) or
                     'display:none' in style or 'visibility:hidden' in style or
                     (node.tag == 'input' and node.attrs.get('type') == 'hidden')):
                 return False

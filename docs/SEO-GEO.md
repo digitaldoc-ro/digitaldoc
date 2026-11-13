@@ -51,7 +51,7 @@ not deployed-site or field measurements.
 
 The contrast and image-delivery audits now pass. Theme-aware control text and
 language-link colors fix the original contrast failures. Browser contrast checks
-also passed for both languages in light/dark and Halloween light/dark themes.
+also passed for both languages in light and dark themes.
 Responsive WebP screenshots weigh 8,448–25,326 bytes instead of the 143,415-byte
 PNG; the PNG remains the fallback and social image. HTML and social metadata now
 use its actual 1024×558 dimensions. Romanian font downloads fell from 88,828 to

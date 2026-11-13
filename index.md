@@ -4,7 +4,7 @@ Sursa canonică: https://www.digitaldoc.ro/
 
 Management documentar în cloud
 
-# Digitaldoc: documente, PDF-uri și partajare prin link
+# Digitaldoc: documente, fișiere și partajare prin link
 
 Digitaldoc este o aplicație de management documentar în cloud. Organizezi documente în foldere, încarci și combini PDF-uri gratuit și partajezi fișiere prin link. Fiecare cont include 1 GB de stocare gratuită.
 

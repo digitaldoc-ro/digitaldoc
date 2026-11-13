@@ -93,7 +93,7 @@ def hidden(node):
     classes = node.attrs.get('class', '').split()
     return (node.tag in IGNORE or node.tag.startswith('!') or 'hidden' in node.attrs
             or node.attrs.get('aria-hidden') == 'true'
-            or 'halloween-greeting' in classes or 'form-success' in classes)
+            or 'form-success' in classes)
 
 
 def inline(node, base_url):
