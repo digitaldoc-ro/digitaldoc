@@ -1,0 +1,12 @@
+{
+  "name": "digitaldoc-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "python3 scripts/build.py && python3 scripts/check_site.py && python3 scripts/check_site.py --root dist",
+    "dev": "python3 scripts/serve.py",
+    "check:seo": "python3 scripts/check_site.py --seo-only",
+    "check:geo": "python3 scripts/check_site.py --geo-only",
+    "test": "python3 -m unittest discover -s tests -v"
+  }
+}

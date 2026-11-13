@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Digitaldoc — Dosare, documente și partajare prin link",
-    "description": "Digitaldoc: organizează documente, încarcă și combină PDF-uri gratuit, editează conținut și partajează prin link. Include 1 GB de stocare gratuită."
+    "title": "Digitaldoc — Management documentar și PDF-uri gratuite",
+    "description": "Organizează documente în foldere, încarcă și combină PDF-uri gratuit și partajează prin link. Contul Digitaldoc include 1 GB de stocare gratuită."
   },
   "a11y": {
     "logoHome": "Digitaldoc acasă",
@@ -9,7 +9,8 @@
     "theme": "Temă",
     "language": "Limbă",
     "menu": "Meniu",
-    "heroImage": "Captură din aplicația Digitaldoc: lista de documente, foldere și partajare"
+    "heroImage": "Captură din aplicația Digitaldoc: lista de documente, foldere și partajare",
+    "skipToMain": "Sari la conținut"
   },
   "nav": {
     "features": "Funcționalități",
@@ -18,7 +19,8 @@
     "pricing": "Prețuri",
     "contact": "Contact",
     "signIn": "Autentificare",
-    "getStarted": "Începe gratuit"
+    "getStarted": "Începe gratuit",
+    "faq": "Întrebări"
   },
   "theme": {
     "auto": "Sistem",
@@ -27,8 +29,8 @@
   },
   "hero": {
     "badge": "Management documentar în cloud",
-    "title": "Dosare, documente și partajare simplă",
-    "lead": "Organizează contracte și fișiere în foldere, încarcă și combină PDF-uri gratuit, editează conținut bogat și partajează documente prin link — totul într-o singură aplicație.",
+    "title": "Digitaldoc: documente, PDF-uri și partajare prin link",
+    "lead": "Digitaldoc este o aplicație de management documentar în cloud. Organizezi documente în foldere, încarci și combini PDF-uri gratuit și partajezi fișiere prin link. Fiecare cont include 1 GB de stocare gratuită.",
     "ctaPrimary": "Creează cont gratuit",
     "ctaSecondary": "Vezi funcționalitățile",
     "pointAuth": "Autentificare Google sau parolă",
@@ -321,12 +323,42 @@
     "emailPlaceholder": "Email",
     "messagePlaceholder": "Mesajul tău",
     "submit": "Trimite mesajul",
-    "success": "Mulțumim! Mesajul a fost trimis — revenim în curând."
+    "success": "Mulțumim! Mesajul a fost trimis — revenim în curând.",
+    "operator": "Digitaldoc este operat de ACS ONE MEGA VISION SRL, CUI 44765145, nr. Reg. Com. J40/14306/2021.",
+    "emailLabel": "Pentru suport, întrebări despre cont sau confidențialitate:",
+    "nameLabel": "Nume",
+    "emailFieldLabel": "Email",
+    "messageLabel": "Mesaj"
   },
   "footer": {
     "copyright": "© 2026 Digitaldoc. Toate drepturile rezervate.",
     "app": "Aplicație",
     "signIn": "Autentificare",
-    "terms": "Termeni și condiții"
+    "terms": "Termeni și condiții",
+    "privacy": "Politica de confidențialitate"
+  },
+  "faq": {
+    "title": "Întrebări despre Digitaldoc",
+    "subtitle": "Ce include contul gratuit și cum funcționează documentele, partajarea și funcțiile cu plată.",
+    "free": {
+      "question": "Ce pot face gratuit în Digitaldoc?",
+      "answer": "Contul gratuit include organizarea documentelor în foldere, partajarea prin link și 1 GB de stocare. Poți încărca, vizualiza, descărca și combina PDF-uri fără abonament și fără credite AI. La combinare alegi ordinea fișierelor, iar Digitaldoc salvează un PDF nou și păstrează originalele."
+    },
+    "storage": {
+      "question": "Ce fișiere folosesc spațiul de stocare?",
+      "answer": "Documentele, PDF-urile încărcate și combinate, imaginile și fișierele DICOM și STL folosesc aceeași cotă de stocare. Cei 1 GB incluși se pot extinde printr-un abonament de stocare. Dacă achiziționezi mai multe niveluri, se aplică cel mai mare nivel, fără a aduna capacitățile."
+    },
+    "paid": {
+      "question": "Care funcții necesită un abonament?",
+      "answer": "Editorul vizual de șabloane, previzualizarea PDF-urilor generate din șabloane, anumite tipuri de câmpuri și modulele suplimentare se achiziționează separat. Editorul HTML de șabloane și descărcarea documentelor ca PDF sunt gratuite. Calculatorul de prețuri arată costul lunar al funcțiilor selectate; în aplicație verifici opțiunile înainte de plată."
+    },
+    "sharing": {
+      "question": "Destinatarii au nevoie de cont pentru a deschide un link?",
+      "answer": "Destinatarii pot deschide în browser un fișier sau folder partajat, fără cont Digitaldoc. Creezi linkul în aplicație și îl trimiți persoanelor care trebuie să aibă acces. Verifică documentele incluse și opțiunile de partajare înainte de a distribui linkul."
+    },
+    "ai": {
+      "question": "Cum se plătește utilizarea AI?",
+      "answer": "Accesul la Chat AI nu necesită abonament lunar, dar generarea răspunsurilor consumă tokeni. Cu DigitaldocAI, consumul se decontează din credite preplătite. Cu propria cheie OpenAI, furnizorul facturează contul tău. Scanarea documentelor și Contexto au abonamente separate, iar consumul AI se plătește suplimentar."
+    }
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Digitaldoc — Folders, documents, and share links",
-    "description": "Digitaldoc: organize documents, upload and merge PDFs for free, edit content, and share with a link. Includes 1 GB of free storage."
+    "title": "Digitaldoc — Document management and free PDF merging",
+    "description": "Organize documents in folders, upload and merge PDFs for free, and share files with a link. Every Digitaldoc account includes 1 GB of free storage."
   },
   "a11y": {
     "logoHome": "Digitaldoc home",
@@ -9,7 +9,8 @@
     "theme": "Theme",
     "language": "Language",
     "menu": "Menu",
-    "heroImage": "Screenshot of the Digitaldoc app: documents list with folders and sharing"
+    "heroImage": "Screenshot of the Digitaldoc app: documents list with folders and sharing",
+    "skipToMain": "Skip to main content"
   },
   "nav": {
     "features": "Features",
@@ -18,7 +19,8 @@
     "pricing": "Pricing",
     "contact": "Contact",
     "signIn": "Sign in",
-    "getStarted": "Get started free"
+    "getStarted": "Get started free",
+    "faq": "FAQ"
   },
   "theme": {
     "auto": "System",
@@ -27,8 +29,8 @@
   },
   "hero": {
     "badge": "Cloud document management",
-    "title": "Folders, documents, and simple sharing",
-    "lead": "Organize contracts and files in folders, upload and merge PDFs for free, edit rich content, and share documents with a link — all in one app.",
+    "title": "Digitaldoc: documents, PDFs, and sharing with a link",
+    "lead": "Digitaldoc is a cloud document management app. Organize documents in folders, upload and merge PDFs for free, and share files with a link. Every account includes 1 GB of free storage.",
     "ctaPrimary": "Create a free account",
     "ctaSecondary": "See features",
     "pointAuth": "Google or password sign-in",
@@ -321,12 +323,42 @@
     "emailPlaceholder": "Email",
     "messagePlaceholder": "Your message",
     "submit": "Send message",
-    "success": "Thank you! Your message was sent — we'll get back to you soon."
+    "success": "Thank you! Your message was sent — we'll get back to you soon.",
+    "operator": "Digitaldoc is operated by ACS ONE MEGA VISION SRL, Romanian company tax ID 44765145, Trade Register no. J40/14306/2021.",
+    "emailLabel": "For support, account questions, or privacy inquiries:",
+    "nameLabel": "Name",
+    "emailFieldLabel": "Email",
+    "messageLabel": "Message"
   },
   "footer": {
     "copyright": "© 2026 Digitaldoc. All rights reserved.",
     "app": "App",
     "signIn": "Sign in",
-    "terms": "Terms and conditions"
+    "terms": "Terms and conditions",
+    "privacy": "Privacy policy"
+  },
+  "faq": {
+    "title": "Questions about Digitaldoc",
+    "subtitle": "What the free account includes and how documents, sharing, and paid features work.",
+    "free": {
+      "question": "What can I do for free in Digitaldoc?",
+      "answer": "The free account includes document organization in folders, sharing with links, and 1 GB of storage. Upload, view, download, and merge PDFs without a subscription or AI credits. Choose the file order when merging; Digitaldoc saves a new PDF and keeps the originals."
+    },
+    "storage": {
+      "question": "Which files use my storage?",
+      "answer": "Documents, uploaded and merged PDFs, images, and DICOM and STL files share the same storage quota. Extend the included 1 GB with a storage subscription. If you purchase multiple tiers, the largest tier applies; their capacities are not added together."
+    },
+    "paid": {
+      "question": "Which features require a subscription?",
+      "answer": "The visual template editor, previews of PDFs generated from templates, certain field types, and additional modules are purchased separately. The HTML template editor and downloading documents as PDFs are free. The pricing calculator shows the monthly cost of selected features; review the options in the app before paying."
+    },
+    "sharing": {
+      "question": "Do recipients need an account to open a shared link?",
+      "answer": "Recipients can open a shared file or folder in their browser without a Digitaldoc account. Create the link in the app and send it to the people who need access. Check the included documents and sharing options before distributing the link."
+    },
+    "ai": {
+      "question": "How is AI usage billed?",
+      "answer": "Chat AI access does not require a monthly subscription, but generating responses uses tokens. DigitaldocAI deducts usage from prepaid credits. With your own OpenAI key, the provider bills your account. Document scanning and Contexto have separate subscriptions, with AI usage charged in addition."
+    }
   }
 }

@@ -1,31 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8">
   <script>
     (function () {
-      var langKey = 'digitaldoc-language';
-      var lang = localStorage.getItem(langKey);
-      if (lang === 'en' || lang === 'ro') {
-        document.documentElement.lang = lang;
-        return;
-      }
-      var tz = '';
-      try {
-        tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
-      } catch (_) {}
-      var navLang = (navigator.language || '').toLowerCase();
-      var prefersRo =
-        tz === 'Europe/Bucharest' ||
-        navLang === 'ro' ||
-        navLang.indexOf('ro-') === 0;
-      document.documentElement.lang = prefersRo ? 'ro' : 'en';
-    })();
-  </script>
-  <script>
-    (function () {
       var key = 'digitaldoc-color-scheme';
-      var pref = localStorage.getItem(key);
+      var pref = null;
+      try { pref = localStorage.getItem(key); } catch (_) {}
       if (pref !== 'light' && pref !== 'dark' && pref !== 'auto') pref = 'auto';
       var dark =
         pref === 'dark' ||
@@ -61,32 +42,170 @@
     })();
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digitaldoc — Dosare, documente și partajare prin link</title>
-  <meta name="description" content="Digitaldoc: organizează documente, încarcă și combină PDF-uri gratuit, editează conținut și partajează prin link. Include 1 GB de stocare gratuită.">
-  <meta name="keywords" content="digitaldoc, management documentar, foldere, documente, PDF, partajare, contracte">
-  <meta name="author" content="Digitaldoc">
-  <meta name="robots" content="index, follow">
+  <title>Digitaldoc — Management documentar și PDF-uri gratuite</title>
+  <meta name="description" content="Organizează documente în foldere, încarcă și combină PDF-uri gratuit și partajează prin link. Contul Digitaldoc include 1 GB de stocare gratuită.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.digitaldoc.ro/">
+  <link rel="alternate" hreflang="ro" href="https://www.digitaldoc.ro/">
+  <link rel="alternate" hreflang="en" href="https://www.digitaldoc.ro/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.digitaldoc.ro/">
+  <link rel="alternate" type="text/markdown" href="https://www.digitaldoc.ro/index.md" title="Markdown">
+  <link rel="sitemap" type="application/xml" href="https://www.digitaldoc.ro/sitemap.xml">
+  <link rel="describedby" type="text/plain" href="https://www.digitaldoc.ro/llms.txt">
+  <link rel="preload" href="/assets/fonts/source-sans-3-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/digitaldoc-romanian-sans-wght-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digitaldoc">
+  <meta property="og:title" content="Digitaldoc — Management documentar și PDF-uri gratuite">
+  <meta property="og:description" content="Organizează documente în foldere, încarcă și combină PDF-uri gratuit și partajează prin link. Contul Digitaldoc include 1 GB de stocare gratuită.">
+  <meta property="og:url" content="https://www.digitaldoc.ro/">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://www.digitaldoc.ro/demo-document-1.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="558">
+  <meta property="og:image:alt" content="Captură din aplicația Digitaldoc: lista de documente, foldere și partajare">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Digitaldoc — Management documentar și PDF-uri gratuite">
+  <meta name="twitter:description" content="Organizează documente în foldere, încarcă și combină PDF-uri gratuit și partajează prin link. Contul Digitaldoc include 1 GB de stocare gratuită.">
+  <meta name="twitter:image" content="https://www.digitaldoc.ro/demo-document-1.png">
+  <meta name="twitter:image:alt" content="Captură din aplicația Digitaldoc: lista de documente, foldere și partajare">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.digitaldoc.ro/#organization",
+      "name": "Digitaldoc",
+      "legalName": "ACS ONE MEGA VISION SRL",
+      "url": "https://www.digitaldoc.ro/",
+      "logo": "https://www.digitaldoc.ro/digitaldoc.svg",
+      "email": "contact@mg.digitaldoc.ro"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.digitaldoc.ro/#website",
+      "url": "https://www.digitaldoc.ro/",
+      "name": "Digitaldoc",
+      "inLanguage": [
+        "ro",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://www.digitaldoc.ro/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.digitaldoc.ro/#webpage",
+      "url": "https://www.digitaldoc.ro/",
+      "name": "Digitaldoc — Management documentar și PDF-uri gratuite",
+      "description": "Organizează documente în foldere, încarcă și combină PDF-uri gratuit și partajează prin link. Contul Digitaldoc include 1 GB de stocare gratuită.",
+      "inLanguage": "ro",
+      "isPartOf": {
+        "@id": "https://www.digitaldoc.ro/#website"
+      },
+      "mainEntity": {
+        "@id": "https://www.digitaldoc.ro/#software"
+      },
+      "publisher": {
+        "@id": "https://www.digitaldoc.ro/#organization"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.digitaldoc.ro/#software",
+      "name": "Digitaldoc",
+      "url": "https://aplicatia.digitaldoc.ro/",
+      "description": "Digitaldoc este o aplicație de management documentar în cloud. Organizezi documente în foldere, încarci și combini PDF-uri gratuit și partajezi fișiere prin link. Fiecare cont include 1 GB de stocare gratuită.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": [
+        "ro",
+        "en"
+      ],
+      "screenshot": "https://www.digitaldoc.ro/demo-document-1.png",
+      "featureList": [
+        "Foldere ierarhice",
+        "Editor de documente",
+        "Încărcare și combinare PDF gratuite",
+        "Partajare prin link",
+        "Autentificare sigură",
+        "Română și engleză"
+      ],
+      "publisher": {
+        "@id": "https://www.digitaldoc.ro/#organization"
+      }
+    }
+  ]
+}</script>
   <meta name="theme-color" content="#002B7F">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J18L89H7RC"></script>
+  <script>
+    window.addEventListener('load', function () {
+      function loadAnalytics() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-J18L89H7RC';
+        document.head.appendChild(script);
+      }
+      if ('requestIdleCallback' in window) window.requestIdleCallback(loadAnalytics, {timeout: 2000});
+      else window.setTimeout(loadAnalytics, 0);
+    }, {once: true});
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-J18L89H7RC');
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .skip-link {
+      position: fixed;
+      top: 0.5rem;
+      left: 0.5rem;
+      z-index: 10000;
+      padding: 0.75rem 1rem;
+      color: var(--on-brand);
+      background: var(--brand);
+      border-radius: 6px;
+      transform: translateY(-150%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .faq-list {
+      display: grid;
+      gap: 1.25rem;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .faq-list article {
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .faq-list h3 { margin-bottom: 0.65rem; font-size: 1.1rem; }
+    .faq-list p { color: var(--text-muted); }
+    .contact-operator { margin-bottom: 1rem; }
 
     :root,
     [data-theme="light"] {
       color-scheme: light;
       --brand: #002B7F;
       --brand-hover: #0039a6;
+      --on-brand: #ffffff;
+      --cta-band-text: var(--on-brand);
+      --cta-button-bg: var(--on-brand);
+      --cta-button-text: var(--brand);
+      --cta-button-hover: var(--brand-soft);
       --brand-soft: #eef2f9;
       --brand-glow: rgba(0, 43, 127, 0.12);
       --hero-accent: rgba(80, 110, 191, 0.08);
@@ -119,6 +238,7 @@
       color-scheme: dark;
       --brand: #6b8cff;
       --brand-hover: #8aa4ff;
+      --on-brand: #111827;
       --brand-soft: #1a2744;
       --brand-glow: rgba(107, 140, 255, 0.18);
       --hero-accent: rgba(107, 140, 255, 0.1);
@@ -146,6 +266,7 @@
     :root[data-season="halloween"] {
       --brand: #713798;
       --brand-hover: #552372;
+      --cta-band-text: #ffffff;
       --brand-soft: #f5eaf9;
       --brand-glow: rgba(113, 55, 152, 0.16);
       --hero-accent: rgba(238, 137, 50, 0.22);
@@ -159,6 +280,10 @@
     :root[data-season="halloween"][data-theme="dark"] {
       --brand: #ffb36b;
       --brand-hover: #ffc58e;
+      --on-brand: #211827;
+      --cta-button-bg: var(--brand);
+      --cta-button-text: var(--on-brand);
+      --cta-button-hover: var(--brand-hover);
       --brand-soft: #38233f;
       --brand-glow: rgba(255, 179, 107, 0.16);
       --hero-accent: rgba(167, 100, 216, 0.2);
@@ -226,20 +351,19 @@
       outline: 2px solid var(--brand-glow);
     }
 
-    [data-season="halloween"][data-theme="dark"] .btn-primary {
-      color: #211827;
-    }
-
-    [data-season="halloween"][data-theme="dark"] .cta-band .btn-primary {
-      background: var(--brand);
-      color: #211827;
-    }
-
     [data-season="halloween"] .cta-band {
       background: #38233f;
     }
 
     html { scroll-behavior: smooth; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
 
     body {
       font-family: var(--font);
@@ -447,6 +571,8 @@
     }
 
     .lang-switch__btn {
+      text-decoration: none;
+      text-align: center;
       min-width: 2.25rem;
       padding: 0.3rem 0.55rem;
       border: none;
@@ -461,13 +587,14 @@
       transition: background 0.15s, color 0.15s;
     }
 
-    .lang-switch__btn:hover {
-      color: var(--brand);
+    .lang-switch__btn:hover,
+    .lang-switch__btn:focus-visible {
+      color: var(--brand-hover);
     }
 
     .lang-switch__btn.is-active {
       background: var(--switcher-active-bg);
-      color: var(--brand);
+      color: var(--brand-hover);
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     }
 
@@ -489,13 +616,20 @@
 
     .btn:active { transform: scale(0.98); }
 
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 3px;
+    }
+
     .btn-primary {
       background: var(--brand);
-      color: #fff;
+      color: var(--on-brand);
       box-shadow: 0 4px 14px var(--brand-glow);
     }
 
-    .btn-primary:hover {
+    .btn-primary:hover,
+    .btn-primary:focus-visible {
       background: var(--brand-hover);
       box-shadow: var(--shadow);
     }
@@ -614,6 +748,8 @@
       50% { transform: translateY(-8px); }
     }
 
+    .hero-visual picture { display: block; }
+
     .hero-visual img {
       display: block;
       width: 100%;
@@ -716,7 +852,7 @@
       align-items: center;
       justify-content: center;
       background: var(--brand);
-      color: #fff;
+      color: var(--on-brand);
       font-weight: 700;
       font-size: 1.25rem;
       border-radius: 50%;
@@ -948,9 +1084,17 @@
       padding: 0.85rem 1rem;
       font-family: inherit;
       font-size: 1rem;
+      color: var(--text);
+      background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: var(--text-muted);
+      opacity: 1;
     }
 
     .contact-form input:focus,
@@ -968,7 +1112,7 @@
     .contact-form button[type="submit"] {
       padding: 0.9rem;
       background: var(--brand);
-      color: #fff;
+      color: var(--on-brand);
       border: none;
       border-radius: var(--radius);
       font-family: inherit;
@@ -978,7 +1122,8 @@
       transition: background 0.15s;
     }
 
-    .contact-form button[type="submit"]:hover {
+    .contact-form button[type="submit"]:hover,
+    .contact-form button[type="submit"]:focus-visible {
       background: var(--brand-hover);
     }
 
@@ -998,7 +1143,7 @@
     .cta-band {
       padding: 4rem 0;
       background: var(--brand);
-      color: #fff;
+      color: var(--cta-band-text);
       text-align: center;
     }
 
@@ -1014,12 +1159,17 @@
     }
 
     .cta-band .btn-primary {
-      background: #fff;
-      color: var(--brand);
+      background: var(--cta-button-bg);
+      color: var(--cta-button-text);
     }
 
-    .cta-band .btn-primary:hover {
-      background: var(--brand-soft);
+    .cta-band .btn-primary:hover,
+    .cta-band .btn-primary:focus-visible {
+      background: var(--cta-button-hover);
+    }
+
+    .cta-band .btn-primary:focus-visible {
+      outline-color: var(--cta-band-text);
     }
 
     /* Footer */
@@ -1195,12 +1345,47 @@
       .audience-grid { grid-template-columns: 1fr; }
     }
   </style>
+<style>
+/* Original variable fonts and a verified Romanian subset. See fonts/README.md. */
+/* Romanian letters are excluded here so they never fetch all of Latin-ext. */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 900;
+  src: url(/assets/fonts/source-sans-3-latin-ext-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0100-0101,U+0104-015D,U+0160-0161,U+0164-0217,U+021C-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+/* Ăă, Șș, Țț and the legacy cedilla variants Şş/Ţţ. Ââ and Îî use Latin. */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 900;
+  src: url(/assets/fonts/digitaldoc-romanian-sans-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0102-0103,U+015E-015F,U+0162-0163,U+0218-021B;
+}
+
+
+/* source-sans-3-latin-wght-normal */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 900;
+  src: url(/assets/fonts/source-sans-3-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+</style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content" data-i18n="a11y.skipToMain">Sari la conținut</a>
   <header class="site-header" id="header">
     <div class="container header-inner">
-      <a href="https://www.digitaldoc.ro" class="logo-link" data-i18n-aria-label="a11y.logoHome" aria-label="Digitaldoc acasă">
-        <img src="digitaldoc.svg" alt="">
+      <a href="/" class="logo-link" data-i18n-aria-label="a11y.logoHome" aria-label="Digitaldoc acasă">
+        <img src="/digitaldoc.svg" alt="" width="831" height="250">
       </a>
       <div class="header-nav-panel" id="header-nav-panel">
         <nav data-i18n-aria-label="a11y.navMain" aria-label="Principal">
@@ -1209,6 +1394,7 @@
             <li><a href="#how" data-i18n="nav.how">Cum funcționează</a></li>
             <li><a href="#for-whom" data-i18n="nav.forWhom">Pentru cine</a></li>
             <li><a href="#pricing" data-i18n="nav.pricing">Prețuri</a></li>
+            <li><a href="#faq" data-i18n="nav.faq">Întrebări</a></li>
             <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </nav>
@@ -1219,25 +1405,16 @@
       </div>
       <div class="header-bar-end">
         <div class="lang-switch" id="lang-switch" role="group" data-i18n-aria-label="a11y.language" aria-label="Limbă">
-          <button type="button" class="lang-switch__btn" data-lang="ro" aria-pressed="false">RO</button>
-          <button type="button" class="lang-switch__btn is-active" data-lang="en" aria-pressed="true">EN</button>
+          <a class="lang-switch__btn is-active" data-lang="ro" href="/" hreflang="ro" lang="ro" aria-current="page">RO</a>
+          <a class="lang-switch__btn" data-lang="en" href="/en/" hreflang="en" lang="en">EN</a>
         </div>
         <div class="theme-menu" id="theme-menu">
-          <button
-            type="button"
-            class="icon-btn theme-menu__trigger"
-            id="theme-trigger"
-            data-i18n-aria-label="a11y.theme"
-            aria-label="Temă"
-            aria-haspopup="listbox"
-            aria-expanded="false"
-            aria-controls="theme-panel"
-          >
-            <svg class="theme-menu__icon theme-menu__icon--light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          <button type="button" class="icon-btn theme-menu__trigger" id="theme-trigger" data-i18n-aria-label="a11y.theme" aria-label="Temă" aria-haspopup="listbox" aria-expanded="false" aria-controls="theme-panel">
+            <svg class="theme-menu__icon theme-menu__icon--light" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
             </svg>
-            <svg class="theme-menu__icon theme-menu__icon--dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+            <svg class="theme-menu__icon theme-menu__icon--dark" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
             </svg>
           </button>
           <ul class="theme-menu__panel" id="theme-panel" role="listbox" data-i18n-aria-label="a11y.theme" aria-label="Temă" hidden>
@@ -1247,8 +1424,8 @@
           </ul>
         </div>
         <button type="button" class="icon-btn menu-toggle" id="menu-toggle" data-i18n-aria-label="a11y.menu" aria-label="Meniu" aria-expanded="false" aria-controls="header-nav-panel">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M4 6h16M4 12h16M4 18h16"/>
+          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
@@ -1256,75 +1433,67 @@
   </header>
   <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
 
-  <main>
-    <section class="hero">
+  <main id="main-content" tabindex="-1">
+    <section class="hero" id="about-digitaldoc">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="halloween-greeting">
-            <svg viewBox="0 0 132 86" fill="none" aria-hidden="true" focusable="false">
+            <svg viewbox="0 0 132 86" fill="none" aria-hidden="true" focusable="false">
               <!-- Moon, bat, and a little ghost above the pumpkin patch. -->
-              <circle cx="101" cy="23" r="17" fill="#ffe4a1"/>
-              <path d="M86 15c5-9 10-10 14-9l-1 7 5-3 5 3-1-7c5-1 10 2 13 9-8-3-12 0-17 5-5-5-10-8-18-5Z" fill="#38233f"/>
-              <path d="M54 44V28a14 14 0 0 1 28 0v23l-7-4-7 4-7-4-7 4v-7Z" fill="#fffaf5" stroke="#b9a0cb" stroke-width="2" stroke-linejoin="round"/>
-              <ellipse cx="64" cy="29" rx="2" ry="3" fill="#38233f"/>
-              <ellipse cx="74" cy="29" rx="2" ry="3" fill="#38233f"/>
-              <path d="M66 38q3 3 6 0" stroke="#38233f" stroke-width="2" stroke-linecap="round"/>
-              <ellipse cx="65" cy="77" rx="57" ry="5" fill="#713798" opacity="0.12"/>
+              <circle cx="101" cy="23" r="17" fill="#ffe4a1"></circle>
+              <path d="M86 15c5-9 10-10 14-9l-1 7 5-3 5 3-1-7c5-1 10 2 13 9-8-3-12 0-17 5-5-5-10-8-18-5Z" fill="#38233f"></path>
+              <path d="M54 44V28a14 14 0 0 1 28 0v23l-7-4-7 4-7-4-7 4v-7Z" fill="#fffaf5" stroke="#b9a0cb" stroke-width="2" stroke-linejoin="round"></path>
+              <ellipse cx="64" cy="29" rx="2" ry="3" fill="#38233f"></ellipse>
+              <ellipse cx="74" cy="29" rx="2" ry="3" fill="#38233f"></ellipse>
+              <path d="M66 38q3 3 6 0" stroke="#38233f" stroke-width="2" stroke-linecap="round"></path>
+              <ellipse cx="65" cy="77" rx="57" ry="5" fill="#713798" opacity="0.12"></ellipse>
               <!-- Two jack-o'-lanterns, with separate lobes and carved faces. -->
-              <path d="M36 45q-2-10 5-14" stroke="#547344" stroke-width="5" stroke-linecap="round"/>
-              <path d="M31 39q-11-11-18-3 6 10 18 3Z" fill="#79965a"/>
-              <ellipse cx="24" cy="60" rx="17" ry="19" fill="#ee8733"/>
-              <ellipse cx="48" cy="60" rx="17" ry="19" fill="#ee8733"/>
-              <ellipse cx="36" cy="60" rx="17" ry="20" fill="#ffa34b"/>
-              <path d="m23 58 7-8 4 9Zm15 1 5-9 7 8ZM24 65l7 3 5-3 5 3 8-3q-10 17-25 0Z" fill="#38233f"/>
-              <path d="M96 52q-1-8 4-11" stroke="#547344" stroke-width="4" stroke-linecap="round"/>
-              <ellipse cx="85" cy="65" rx="14" ry="14" fill="#db702a"/>
-              <ellipse cx="107" cy="65" rx="14" ry="14" fill="#db702a"/>
-              <ellipse cx="96" cy="65" rx="14" ry="15" fill="#f4933c"/>
-              <path d="m85 63 5-5 3 6Zm14 1 3-6 5 5ZM87 69q9 9 18 0" fill="#38233f"/>
-              <path d="m14 15 2 4 4 2-4 2-2 4-2-4-4-2 4-2Zm31-8 1 3 3 1-3 1-1 3-1-3-3-1 3-1Z" fill="#b389cb"/>
+              <path d="M36 45q-2-10 5-14" stroke="#547344" stroke-width="5" stroke-linecap="round"></path>
+              <path d="M31 39q-11-11-18-3 6 10 18 3Z" fill="#79965a"></path>
+              <ellipse cx="24" cy="60" rx="17" ry="19" fill="#ee8733"></ellipse>
+              <ellipse cx="48" cy="60" rx="17" ry="19" fill="#ee8733"></ellipse>
+              <ellipse cx="36" cy="60" rx="17" ry="20" fill="#ffa34b"></ellipse>
+              <path d="m23 58 7-8 4 9Zm15 1 5-9 7 8ZM24 65l7 3 5-3 5 3 8-3q-10 17-25 0Z" fill="#38233f"></path>
+              <path d="M96 52q-1-8 4-11" stroke="#547344" stroke-width="4" stroke-linecap="round"></path>
+              <ellipse cx="85" cy="65" rx="14" ry="14" fill="#db702a"></ellipse>
+              <ellipse cx="107" cy="65" rx="14" ry="14" fill="#db702a"></ellipse>
+              <ellipse cx="96" cy="65" rx="14" ry="15" fill="#f4933c"></ellipse>
+              <path d="m85 63 5-5 3 6Zm14 1 3-6 5 5ZM87 69q9 9 18 0" fill="#38233f"></path>
+              <path d="m14 15 2 4 4 2-4 2-2 4-2-4-4-2 4-2Zm31-8 1 3 3 1-3 1-1 3-1-3-3-1 3-1Z" fill="#b389cb"></path>
             </svg>
             <div><span>31 OCT</span><strong>Halloween</strong></div>
           </div>
           <span class="hero-badge" data-i18n="hero.badge">Management documentar în cloud</span>
-          <h1 data-i18n="hero.title">Dosare, documente și partajare simplă</h1>
-          <p class="hero-lead" data-i18n="hero.lead">
-            Organizează contracte și fișiere în foldere, încarcă și combină PDF-uri gratuit,
-            editează conținut bogat și partajează documente prin link — totul într-o singură aplicație.
-          </p>
+          <h1 data-i18n="hero.title">Digitaldoc: documente, PDF-uri și partajare prin link</h1>
+          <p class="hero-lead" data-i18n="hero.lead">Digitaldoc este o aplicație de management documentar în cloud. Organizezi documente în foldere, încarci și combini PDF-uri gratuit și partajezi fișiere prin link. Fiecare cont include 1 GB de stocare gratuită.</p>
           <div class="hero-actions">
             <a href="https://aplicatia.digitaldoc.ro/register" class="btn btn-primary btn-lg" data-i18n="hero.ctaPrimary">Creează cont gratuit</a>
             <a href="#features" class="btn btn-ghost btn-lg" data-i18n="hero.ctaSecondary">Vezi funcționalitățile</a>
           </div>
           <ul class="hero-points">
             <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg>
               <span data-i18n="hero.pointAuth">Autentificare Google sau parolă</span>
             </li>
             <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg>
               <span data-i18n="hero.pointLang">Interfață în română și engleză</span>
             </li>
             <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg>
               <span data-i18n="hero.pointPdf">Încărcare și combinare PDF gratuite</span>
             </li>
           </ul>
         </div>
         <figure class="hero-visual">
-          <img
-            src="demo-document-1.png"
-            data-i18n-alt="a11y.heroImage"
-            alt="Captură din aplicația Digitaldoc: vizualizare document, foldere și acțiuni de editare"
-            width="1372"
-            height="772"
-            loading="eager"
-            decoding="async"
-          >
-          <svg class="halloween-web" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false">
-            <path d="M120 0H0m120 0L9 46M120 0 35 85M120 0 74 111M120 0v120"/>
-            <path d="M96 0q0 9 2 9t5 8q4 2 8 5t9 2M72 0q0 17 4 18t10 16q8 4 16 10t18 4M48 0q0 26 6 27t15 24q12 6 24 15t27 6M24 0q0 35 8 36t20 32q16 8 32 20t36 8M0 0q0 43 10 45t25 40q20 10 40 25t45 10"/>
+          <picture>
+            <source type="image/webp" srcset="/assets/images/digitaldoc-document-workspace-400.webp 400w, /assets/images/digitaldoc-document-workspace-560.webp 560w, /assets/images/digitaldoc-document-workspace-768.webp 768w, /assets/images/digitaldoc-document-workspace-1024.webp 1024w" sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 900px) 560px, (max-width: 1160px) calc(50vw - 44px), 536px">
+          <img src="/demo-document-1.png" data-i18n-alt="a11y.heroImage" alt="Captură din aplicația Digitaldoc: lista de documente, foldere și partajare" width="1024" height="558" loading="eager" fetchpriority="high" decoding="async">
+          </picture>
+          <svg class="halloween-web" viewbox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false">
+            <path d="M120 0H0m120 0L9 46M120 0 35 85M120 0 74 111M120 0v120"></path>
+            <path d="M96 0q0 9 2 9t5 8q4 2 8 5t9 2M72 0q0 17 4 18t10 16q8 4 16 10t18 4M48 0q0 26 6 27t15 24q12 6 24 15t27 6M24 0q0 35 8 36t20 32q16 8 32 20t36 8M0 0q0 43 10 45t25 40q20 10 40 25t45 10"></path>
           </svg>
         </figure>
       </div>
@@ -1337,44 +1506,44 @@
           <p data-i18n="features.subtitle">Funcționalități disponibile acum în platformă — construite pentru echipe care lucrează zilnic cu documente.</p>
         </div>
         <div class="features-grid">
-          <article class="feature-card">
+          <article class="feature-card" id="folders">
             <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+              <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
             </div>
             <h3 data-i18n="features.folders.title">Foldere ierarhice</h3>
             <p data-i18n="features.folders.desc">Structurează documentele în arbori de foldere — pe client, dosar sau proiect, ușor de găsit.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card" id="templates">
             <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
             </div>
             <h3 data-i18n="features.editor.title">Editor de documente</h3>
             <p data-i18n="features.editor.desc">Editor vizual: text formatat, tabele, imagini, șabloane personalizabile și mod avansat pentru pagini complete.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card" id="pdf">
             <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+              <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"></path></svg>
             </div>
             <h3 data-i18n="features.pdf.title">Încărcare și combinare PDF gratuite</h3>
             <p data-i18n="features.pdf.desc">Încarcă, vizualizează și descarcă PDF-uri gratuit. Combină fișierele în ordinea aleasă într-un PDF nou, păstrând originalele. Fișierele folosesc spațiul de stocare, cu 1 GB inclus gratuit.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card" id="sharing">
             <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path></svg>
             </div>
             <h3 data-i18n="features.sharing.title">Partajare prin link</h3>
             <p data-i18n="features.sharing.desc">Publică un fișier sau folder, copiază linkul și trimite-l. Destinatarii îl deschid în browser — fără cont.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card" id="authentication">
             <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0110 0v4"></path></svg>
             </div>
             <h3 data-i18n="features.auth.title">Autentificare sigură</h3>
             <p data-i18n="features.auth.desc">Cont local cu parolă sau autentificare Google. Sesiuni securizate și resetare parolă prin email.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card" id="languages">
             <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"></path></svg>
             </div>
             <h3 data-i18n="features.i18n.title">Română și engleză</h3>
             <p data-i18n="features.i18n.desc">Interfața se adaptează limbii tale. Mesajele API respectă preferința de localizare.</p>
@@ -1418,7 +1587,7 @@
         <div class="audience-grid">
           <article class="audience-card">
             <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+              <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"></path></svg>
             </div>
             <div>
               <h3 data-i18n="forWhom.schools.title">Școli și instituții</h3>
@@ -1427,7 +1596,7 @@
           </article>
           <article class="audience-card">
             <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+              <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg>
             </div>
             <div>
               <h3 data-i18n="forWhom.legal.title">Birouri notariale și juridice</h3>
@@ -1436,7 +1605,7 @@
           </article>
           <article class="audience-card">
             <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
             </div>
             <div>
               <h3 data-i18n="forWhom.photographers.title">Fotografi</h3>
@@ -1445,7 +1614,7 @@
           </article>
           <article class="audience-card">
             <div class="feature-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
+              <svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path></svg>
             </div>
             <div>
               <h3 data-i18n="forWhom.teams.title">Echipe și profesioniști</h3>
@@ -1858,6 +2027,37 @@
       </div>
     </section>
 
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="faq.title">Întrebări despre Digitaldoc</h2>
+          <p data-i18n="faq.subtitle">Ce include contul gratuit și cum funcționează documentele, partajarea și funcțiile cu plată.</p>
+        </div>
+        <div class="faq-list">
+          <article id="faq-free">
+            <h3 data-i18n="faq.free.question">Ce pot face gratuit în Digitaldoc?</h3>
+            <p data-i18n="faq.free.answer">Contul gratuit include organizarea documentelor în foldere, partajarea prin link și 1 GB de stocare. Poți încărca, vizualiza, descărca și combina PDF-uri fără abonament și fără credite AI. La combinare alegi ordinea fișierelor, iar Digitaldoc salvează un PDF nou și păstrează originalele.</p>
+          </article>
+          <article id="faq-storage">
+            <h3 data-i18n="faq.storage.question">Ce fișiere folosesc spațiul de stocare?</h3>
+            <p data-i18n="faq.storage.answer">Documentele, PDF-urile încărcate și combinate, imaginile și fișierele DICOM și STL folosesc aceeași cotă de stocare. Cei 1 GB incluși se pot extinde printr-un abonament de stocare. Dacă achiziționezi mai multe niveluri, se aplică cel mai mare nivel, fără a aduna capacitățile.</p>
+          </article>
+          <article id="faq-paid">
+            <h3 data-i18n="faq.paid.question">Care funcții necesită un abonament?</h3>
+            <p data-i18n="faq.paid.answer">Editorul vizual de șabloane, previzualizarea PDF-urilor generate din șabloane, anumite tipuri de câmpuri și modulele suplimentare se achiziționează separat. Editorul HTML de șabloane și descărcarea documentelor ca PDF sunt gratuite. Calculatorul de prețuri arată costul lunar al funcțiilor selectate; în aplicație verifici opțiunile înainte de plată.</p>
+          </article>
+          <article id="faq-sharing">
+            <h3 data-i18n="faq.sharing.question">Destinatarii au nevoie de cont pentru a deschide un link?</h3>
+            <p data-i18n="faq.sharing.answer">Destinatarii pot deschide în browser un fișier sau folder partajat, fără cont Digitaldoc. Creezi linkul în aplicație și îl trimiți persoanelor care trebuie să aibă acces. Verifică documentele incluse și opțiunile de partajare înainte de a distribui linkul.</p>
+          </article>
+          <article id="faq-ai">
+            <h3 data-i18n="faq.ai.question">Cum se plătește utilizarea AI?</h3>
+            <p data-i18n="faq.ai.answer">Accesul la Chat AI nu necesită abonament lunar, dar generarea răspunsurilor consumă tokeni. Cu DigitaldocAI, consumul se decontează din credite preplătite. Cu propria cheie OpenAI, furnizorul facturează contul tău. Scanarea documentelor și Contexto au abonamente separate, iar consumul AI se plătește suplimentar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="surface-alt">
       <div class="container">
         <div class="section-head">
@@ -1865,15 +2065,18 @@
           <p data-i18n="contact.subtitle">Întrebări despre demo, prețuri sau parteneriat? Scrie-ne.</p>
         </div>
         <div class="contact-wrap">
+          <p class="contact-operator" data-i18n="contact.operator">Digitaldoc este operat de ACS ONE MEGA VISION SRL, CUI 44765145, nr. Reg. Com. J40/14306/2021.</p>
+          <p class="contact-operator"><span data-i18n="contact.emailLabel">Pentru suport, întrebări despre cont sau confidențialitate:</span> <a href="mailto:contact@mg.digitaldoc.ro">contact@mg.digitaldoc.ro</a></p>
           <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="8407bdae-870d-4dec-b698-444777d9890c">
-            <input type="text" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Numele tău" required autocomplete="name">
-            <input type="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Email" required autocomplete="email">
-            <textarea name="message" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Mesajul tău" required></textarea>
+            <label for="contact-name" data-i18n="contact.nameLabel">Nume</label>
+            <input id="contact-name" type="text" name="name" data-i18n-aria-label="contact.namePlaceholder" aria-label="Numele tău" data-i18n-placeholder="contact.namePlaceholder" placeholder="Numele tău" required autocomplete="name">
+            <label for="contact-email" data-i18n="contact.emailFieldLabel">Email</label>
+            <input id="contact-email" type="email" name="email" data-i18n-aria-label="contact.emailPlaceholder" aria-label="Email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Email" required autocomplete="email">
+            <label for="contact-message" data-i18n="contact.messageLabel">Mesaj</label>
+            <textarea id="contact-message" name="message" data-i18n-aria-label="contact.messagePlaceholder" aria-label="Mesajul tău" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Mesajul tău" required></textarea>
             <button type="submit" data-i18n="contact.submit">Trimite mesajul</button>
-            <div class="form-success" id="form-success" data-i18n="contact.success">
-              Mulțumim! Mesajul a fost trimis — revenim în curând.
-            </div>
+            <div class="form-success" id="form-success" data-i18n="contact.success">Mulțumim! Mesajul a fost trimis — revenim în curând.</div>
           </form>
         </div>
       </div>
@@ -1882,18 +2085,18 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p data-i18n="footer.copyright">&copy; 2026 Digitaldoc. Toate drepturile rezervate.</p>
+      <p data-i18n="footer.copyright">© 2026 Digitaldoc. Toate drepturile rezervate.</p>
       <ul class="footer-links">
         <li><a href="https://aplicatia.digitaldoc.ro" data-i18n="footer.app">Aplicație</a></li>
         <li><a href="https://aplicatia.digitaldoc.ro/login" data-i18n="footer.signIn">Autentificare</a></li>
         <li><a href="https://aplicatia.digitaldoc.ro/terms" data-i18n="footer.terms">Termeni și condiții</a></li>
-        <li><a href="https://aplicatia.digitaldoc.ro/privacy" lang="ro">Politica de confidențialitate</a></li>
+        <li><a href="https://aplicatia.digitaldoc.ro/privacy" data-i18n="footer.privacy">Politica de confidențialitate</a></li>
         <li><a href="mailto:contact@mg.digitaldoc.ro">contact@mg.digitaldoc.ro</a></li>
       </ul>
     </div>
   </footer>
 
-  <script src="i18n/landing.js" defer></script>
+  <script src="/i18n/landing.js" defer></script>
   <script>
     const THEME_KEY = 'digitaldoc-color-scheme';
     const header = document.getElementById('header');
@@ -1903,7 +2106,8 @@
     const themeOptions = document.querySelectorAll('.theme-menu__option');
 
     function getStoredPreference() {
-      var pref = localStorage.getItem(THEME_KEY);
+      var pref = null;
+      try { pref = localStorage.getItem(THEME_KEY); } catch (_) {}
       if (pref === 'light' || pref === 'dark' || pref === 'auto') return pref;
       return 'auto';
     }
@@ -1961,7 +2165,7 @@
     themeOptions.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var preference = btn.dataset.themeValue;
-        localStorage.setItem(THEME_KEY, preference);
+        try { localStorage.setItem(THEME_KEY, preference); } catch (_) {}
         applyTheme(preference);
         closeThemePanel();
       });
@@ -2004,15 +2208,8 @@
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href === '#') return;
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          setNavOpen(false);
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+      anchor.addEventListener('click', function () {
+        setNavOpen(false);
       });
     });
 

@@ -1,0 +1,522 @@
+<!-- Generated from the visible HTML; edit src/index.html and i18n/*.json. -->
+
+Sursa canonică: https://www.digitaldoc.ro/
+
+Management documentar în cloud
+
+# Digitaldoc: documente, PDF-uri și partajare prin link
+
+Digitaldoc este o aplicație de management documentar în cloud. Organizezi documente în foldere, încarci și combini PDF-uri gratuit și partajezi fișiere prin link. Fiecare cont include 1 GB de stocare gratuită.
+
+[Creează cont gratuit](https://aplicatia.digitaldoc.ro/register) [Vezi funcționalitățile](https://www.digitaldoc.ro/#features)
+
+- Autentificare Google sau parolă
+- Interfață în română și engleză
+- Încărcare și combinare PDF gratuite
+
+![Captură din aplicația Digitaldoc: lista de documente, foldere și partajare](https://www.digitaldoc.ro/demo-document-1.png)
+
+## Tot ce ai nevoie, fără complicații
+
+Funcționalități disponibile acum în platformă — construite pentru echipe care lucrează zilnic cu documente.
+
+### Foldere ierarhice
+
+Structurează documentele în arbori de foldere — pe client, dosar sau proiect, ușor de găsit.
+
+### Editor de documente
+
+Editor vizual: text formatat, tabele, imagini, șabloane personalizabile și mod avansat pentru pagini complete.
+
+### Încărcare și combinare PDF gratuite
+
+Încarcă, vizualizează și descarcă PDF-uri gratuit. Combină fișierele în ordinea aleasă într-un PDF nou, păstrând originalele. Fișierele folosesc spațiul de stocare, cu 1 GB inclus gratuit.
+
+### Partajare prin link
+
+Publică un fișier sau folder, copiază linkul și trimite-l. Destinatarii îl deschid în browser — fără cont.
+
+### Autentificare sigură
+
+Cont local cu parolă sau autentificare Google. Sesiuni securizate și resetare parolă prin email.
+
+### Română și engleză
+
+Interfața se adaptează limbii tale. Mesajele API respectă preferința de localizare.
+
+## Cum funcționează
+
+Trei pași de la cont nou la document partajat.
+
+1
+
+### Creezi structura
+
+Adaugi foldere și documente. Fiecare document poate conține conținut simplu sau o pagină completă cu stiluri.
+
+2
+
+### Editezi conținutul
+
+Folosești editorul vizual sau modul avansat. Inserezi câmpuri și variabile pentru text dinamic la export PDF.
+
+3
+
+### Partajezi și previzualizezi
+
+Previzualizezi PDF-ul, copiezi un link de partajare și îl trimiți — destinatarii deschid documentul fără cont.
+
+## Pentru cine este Digitaldoc?
+
+De la școli și birouri profesionale la echipe care au nevoie de un loc clar pentru documente.
+
+### Școli și instituții
+
+Liste de elevi, contracte și documente oficiale organizate pe clase și ani școlari, ușor de actualizat și exportat în PDF.
+
+### Birouri notariale și juridice
+
+Contracte, anexe și acte grupate pe client sau dosar. Partajezi un link când cineva are nevoie de acces.
+
+### Fotografi
+
+Ține contractele, brief-urile și livrabilele pe client sau eveniment. Partajezi un link cu clientul și verifici PDF-ul înainte de livrare.
+
+### Echipe și profesioniști
+
+Un singur spațiu pentru documente pe care le partajezi cu un link — fără foldere pierdute pe email sau stick-uri USB.
+
+## Modele de plată
+
+Începe gratuit, apoi bifează doar câmpurile și modulele de care ai nevoie. Fiecare achiziție este un abonament lunar separat și poți adăuga oricând alte funcții.
+
+### Cont și documente
+
+Acces la cont, organizarea și partajarea documentelor.
+
+Fișiere și foldere Gratuit Creează documente și organizează-le în foldere.
+
+Partajare pentru oaspeți Gratuit Partajează documente și foldere publicate prin link și PIN.
+
+Cont și autentificare Gratuit Creează un cont și autentifică-te cu Google sau cu parolă.
+
+### Câmpuri document
+
+Fiecare tip de câmp se taxează separat. Selector imagini vine cu DigiStorage.
+
+Toate câmpurile plătite
+
+Text Gratuit Text pe un singur rând pentru nume, titluri și răspunsuri scurte.
+
+Zonă text Gratuit Text pe mai multe rânduri pentru note, comentarii și conținut mai lung.
+
+Separator Gratuit Separator vizual între secțiuni în formular.
+
+Email Adresă de email cu validare de format de bază. 2.50 RON
+
+Telefon Câmp pentru număr de telefon / date de contact. 2.50 RON
+
+Parolă Câmp mascat pentru secrete sau coduri de acces. 2.50 RON
+
+Număr Valori numerice, cu limite opționale min/max. 2.50 RON
+
+Dată Selector de dată pentru termene, zile de naștere și programări. 2.50 RON
+
+Titlu Titlu de secțiune afișat pe formular (doar afișare). 2.50 RON
+
+Disclaimer Notă legală sau informativă pe formular (doar afișare). 2.50 RON
+
+Selector Listă derulantă pentru a alege o singură opțiune. 2.50 RON
+
+Selector pe niveluri Liste derulante în cascadă pentru alegeri ierarhice. 2.50 RON
+
+Bifă Una sau mai multe opțiuni pe care utilizatorul le poate bifa. 2.50 RON
+
+Radio Alege exact o opțiune dintr-un set. 2.50 RON
+
+Listă infinită Rânduri repetabile (tabele) cu câmpuri copil imbricate. 5.00 RON
+
+Hartă Plasează un pin pe hartă pentru a captura o locație. 2.50 RON
+
+Semnătură Desenează sau capturează o semnătură olografă. 2.50 RON
+
+Produse Linii de produse pentru oferte și comenzi. 2.50 RON
+
+Tabel Un tabel cu coloanele definite de tine; cei care completează documentul adaugă rânduri. 2.50 RON
+
+### DigiStorage
+
+Integrare stocare cloud, inclusiv câmpul Selector imagini.
+
+DigiStorage + Selector imagini Conectează foldere DigiStorage și folosește Selector imagini pe documente. 15.00 RON
+
+### Resurse
+
+Încarcă imagini, vizualizează-le în arborele de documente și refolosește-le în șabloane.
+
+Resurse statice Încarcă imagini JPEG, PNG sau GIF, vizualizează-le, descarcă-le și refolosește imaginile salvate în șabloane. Fișierele folosesc cota de stocare. 5.00 RON
+
+### PDF
+
+Încărcarea, vizualizarea, descărcarea și combinarea PDF-urilor sunt gratuite în limita cotei de stocare, la fel ca editorul HTML și descărcarea documentelor ca PDF. Previzualizarea PDF-urilor generate din șabloane și editorul vizual de șabloane se plătesc.
+
+Editor HTML (v1) Gratuit Editează șabloanele direct în cod HTML.
+
+Descărcare PDF Gratuit Descarcă documentele ca PDF, inclusiv din linkurile de partajare.
+
+Încărcare și combinare PDF Gratuit Încarcă un singur PDF odată, folosește tabul Previzualizare și descarcă sau combină PDF-uri. Combină 2–100 de PDF-uri, maximum 100 MB și 5.000 de pagini în total. Nu este necesar un abonament sau credite AI. Originalele și copiile combinate folosesc cota de stocare.
+
+Previzualizare PDF generat și editor de șabloane Previzualizează PDF-urile generate din șabloanele documentelor și editează șabloanele vizual (v2). Previzualizarea PDF-urilor încărcate este gratuită. 10.00 RON
+
+### Diverse
+
+Surse de date, import și export .ddoc, import și legare câmpuri.
+
+Funcții diverse Refolosește valori din surse de date, importă și exportă fișiere .ddoc și importă și leagă câmpuri între documente. 10.00 RON
+
+### Contexto
+
+Asistent pentru grupurile WhatsApp, cu furnizorul AI ales în Setări. Tokenii AI se plătesc separat de abonament.
+
+Contexto Răspunsuri, rezumate și abilități personalizate pentru grupurile WhatsApp. Folosește DigitaldocAI cu credite preplătite sau propria cheie OpenAI, conform alegerii din Setări. Tokenii AI costă suplimentar: DigitaldocAI consumă credite; OpenAI facturează contul tău de la furnizor. 30.00 RON
+
+### DICOM și STL
+
+Încarcă imagistică medicală (.dcm) și modele 3D (.stl) în documente și vizualizează-le în aplicație. Fișierele folosesc spațiul de stocare.
+
+Fișiere DICOM și STL Încarcă fișiere .dcm și .stl și deschide-le în vizualizatorul 2D / 3D integrat. 50.00 RON
+
+### Scanare documente
+
+Scanează imaginea unui document și salvează textul extras ca document nou. Digitaldoc nu stochează imaginea. Pe lângă abonamentul lunar, plătești tokenii consumați, fie pe infrastructura DigitaldocAI, fie cu un model extern.
+
+Scanare documente Scanează imaginea unui document cu furnizorul AI ales în Setări și salvează textul extras ca document nou. DigitaldocAI: 0,01 RON / 1.000 de tokeni (10 RON / 1.000.000 de tokeni, intrare + ieșire), din credite preplătite. Model extern (cheia ta OpenAI): tarifele furnizorului, facturate direct de acesta. 20.00 RON
+
+### Chat AI
+
+Pune întrebări despre Digitaldoc și lucrează cu documentele tale folosind furnizorul AI ales în Setări. Fără abonament lunar: DigitaldocAI consumă credite preplătite pentru tokenii folosiți; propria cheie OpenAI folosește facturarea contului tău de la furnizor.
+
+Chat AI Gratuit Primește ajutor despre Digitaldoc, găsește și deschide documentele tale și editează câmpuri și șabloane în Chat AI. Nu este necesar un abonament pentru Chat AI. DigitaldocAI consumă credite preplătite pentru tokenii de intrare și ieșire; cu propria cheie OpenAI, OpenAI facturează contul tău de la furnizor. Tipurile de câmpuri cu plată și editorul vizual de șabloane necesită în continuare propriile funcții.
+
+### Spațiu de stocare
+
+Documentele, PDF-urile încărcate și combinate, fișierele DICOM și STL și resursele statice folosesc același spațiu. Fiecare cont are 1 GB gratuit; contează cel mai mare nivel cumpărat.
+
+1 GB de stocare Gratuit Inclus în fiecare cont.
+
+5 GB spațiu de stocare Stochează până la 5 GB de documente, PDF-uri încărcate și combinate, fișiere DICOM și STL și imagini. 15.00 RON
+
+10 GB spațiu de stocare Stochează până la 10 GB de documente, PDF-uri încărcate și combinate, fișiere DICOM și STL și imagini. 30.00 RON
+
+20 GB spațiu de stocare Stochează până la 20 GB de documente, PDF-uri încărcate și combinate, fișiere DICOM și STL și imagini. 50.00 RON
+
+Total lunar
+
+**0.00 RON** / lună
+
+[Începe în aplicație](https://aplicatia.digitaldoc.ro/register)
+
+Prețurile afișate sunt finale. Nu suntem plătitori de TVA.
+
+## Întrebări despre Digitaldoc
+
+Ce include contul gratuit și cum funcționează documentele, partajarea și funcțiile cu plată.
+
+### Ce pot face gratuit în Digitaldoc?
+
+Contul gratuit include organizarea documentelor în foldere, partajarea prin link și 1 GB de stocare. Poți încărca, vizualiza, descărca și combina PDF-uri fără abonament și fără credite AI. La combinare alegi ordinea fișierelor, iar Digitaldoc salvează un PDF nou și păstrează originalele.
+
+### Ce fișiere folosesc spațiul de stocare?
+
+Documentele, PDF-urile încărcate și combinate, imaginile și fișierele DICOM și STL folosesc aceeași cotă de stocare. Cei 1 GB incluși se pot extinde printr-un abonament de stocare. Dacă achiziționezi mai multe niveluri, se aplică cel mai mare nivel, fără a aduna capacitățile.
+
+### Care funcții necesită un abonament?
+
+Editorul vizual de șabloane, previzualizarea PDF-urilor generate din șabloane, anumite tipuri de câmpuri și modulele suplimentare se achiziționează separat. Editorul HTML de șabloane și descărcarea documentelor ca PDF sunt gratuite. Calculatorul de prețuri arată costul lunar al funcțiilor selectate; în aplicație verifici opțiunile înainte de plată.
+
+### Destinatarii au nevoie de cont pentru a deschide un link?
+
+Destinatarii pot deschide în browser un fișier sau folder partajat, fără cont Digitaldoc. Creezi linkul în aplicație și îl trimiți persoanelor care trebuie să aibă acces. Verifică documentele incluse și opțiunile de partajare înainte de a distribui linkul.
+
+### Cum se plătește utilizarea AI?
+
+Accesul la Chat AI nu necesită abonament lunar, dar generarea răspunsurilor consumă tokeni. Cu DigitaldocAI, consumul se decontează din credite preplătite. Cu propria cheie OpenAI, furnizorul facturează contul tău. Scanarea documentelor și Contexto au abonamente separate, iar consumul AI se plătește suplimentar.
+
+## Contact
+
+Întrebări despre demo, prețuri sau parteneriat? Scrie-ne.
+
+Digitaldoc este operat de ACS ONE MEGA VISION SRL, CUI 44765145, nr. Reg. Com. J40/14306/2021.
+
+Pentru suport, întrebări despre cont sau confidențialitate: [contact@mg.digitaldoc.ro](mailto:contact@mg.digitaldoc.ro)
+
+© 2026 Digitaldoc. Toate drepturile rezervate.
+
+- [Aplicație](https://aplicatia.digitaldoc.ro)
+- [Autentificare](https://aplicatia.digitaldoc.ro/login)
+- [Termeni și condiții](https://aplicatia.digitaldoc.ro/terms)
+- [Politica de confidențialitate](https://aplicatia.digitaldoc.ro/privacy)
+- [contact@mg.digitaldoc.ro](mailto:contact@mg.digitaldoc.ro)
+
+
+---
+
+<!-- Generated from the visible HTML; edit src/index.html and i18n/*.json. -->
+
+Canonical source: https://www.digitaldoc.ro/en/
+
+Cloud document management
+
+# Digitaldoc: documents, PDFs, and sharing with a link
+
+Digitaldoc is a cloud document management app. Organize documents in folders, upload and merge PDFs for free, and share files with a link. Every account includes 1 GB of free storage.
+
+[Create a free account](https://aplicatia.digitaldoc.ro/register) [See features](https://www.digitaldoc.ro/en/#features)
+
+- Google or password sign-in
+- Romanian and English interface
+- Free PDF uploads and merging
+
+![Screenshot of the Digitaldoc app: documents list with folders and sharing](https://www.digitaldoc.ro/demo-document-1.png)
+
+## Everything you need, without the clutter
+
+Features available in the platform today — built for teams that work with documents every day.
+
+### Nested folders
+
+Structure documents in folder trees — nest by client, case, or project and keep everything easy to find.
+
+### Document editor
+
+Visual editor: formatted text, tables, images, customizable templates, and advanced mode for full pages.
+
+### Free PDF uploads and merging
+
+Upload, view, and download PDFs for free. Combine files in your chosen order into a new PDF while keeping the originals. Files use your storage, with 1 GB included free.
+
+### Share with a link
+
+Publish a file or folder, copy the share link, and send it. Recipients open it in the browser — no account required.
+
+### Secure authentication
+
+Local account with password or Google sign-in. Secure sessions and password reset by email.
+
+### Romanian and English
+
+The interface adapts to your language. API messages respect your locale preference.
+
+## How it works
+
+Three steps from a new account to a shared document.
+
+1
+
+### Create your structure
+
+Add folders and documents. Each document can contain simple content or a full styled page.
+
+2
+
+### Edit content
+
+Use the visual editor or advanced mode. Insert fields and variables for dynamic text in PDF export.
+
+3
+
+### Share and preview
+
+Preview the PDF, copy a share link, and send it — recipients open the document without signing up.
+
+## Who is Digitaldoc for?
+
+From schools and professional offices to teams that need a clear home for documents.
+
+### Schools and institutions
+
+Student lists, contracts, and official documents organized by class and school year — easy to update and export to PDF.
+
+### Notary and legal offices
+
+Contracts, annexes, and deeds grouped by client or case file. Share a link when someone needs access.
+
+### Photographers
+
+Keep contracts, briefs, and deliverables per client or event. Share a link with the client and verify the PDF before delivery.
+
+### Teams and professionals
+
+One place for documents you can share with a link — no more folders lost in email or on USB drives.
+
+## Pricing
+
+Start free, then check only the fields and modules you need. Each purchase is its own monthly subscription, and you can add more features anytime.
+
+### Account & documents
+
+Account access, document organization and sharing.
+
+Files & folders Free Create documents and organize them in folders.
+
+Guest sharing Free Share published documents and folders using a link and PIN.
+
+Account & sign-in Free Create an account and sign in with Google or a password.
+
+### Document fields
+
+Each field type is billed separately. Image picker is part of DigiStorage.
+
+All paid fields
+
+Text Free Single-line text for names, titles, and short answers.
+
+Text area Free Multi-line text for notes, comments, and longer content.
+
+Divider Free Visual separator between sections in the form.
+
+Email Email address with basic format validation. 2.50 RON
+
+Phone Phone number field for contact details. 2.50 RON
+
+Password Masked input for secrets or access codes. 2.50 RON
+
+Number Numeric values with optional min/max constraints. 2.50 RON
+
+Date Date picker for deadlines, birthdays, and schedules. 2.50 RON
+
+Title Section heading shown on the form (display only). 2.50 RON
+
+Disclaimer Legal or info notice shown on the form (display only). 2.50 RON
+
+Picker Dropdown to choose one option from a list. 2.50 RON
+
+Multi-level picker Cascading dropdowns for hierarchical choices. 2.50 RON
+
+Checkbox One or more on/off options the user can tick. 2.50 RON
+
+Radio Choose exactly one option from a set. 2.50 RON
+
+Infinite list Repeatable rows (tables) with nested child fields. 5.00 RON
+
+Map Place a pin on a map to capture a location. 2.50 RON
+
+Signature Draw or capture a handwritten signature. 2.50 RON
+
+Products Line items with product details for quotes and orders. 2.50 RON
+
+Table input A table with columns you define; people filling the document add rows. 2.50 RON
+
+### DigiStorage
+
+Cloud storage integration, including the Image picker field.
+
+DigiStorage + Image picker Connect DigiStorage folders and use Image picker on documents. 15.00 RON
+
+### Assets
+
+Upload images, view them in your document tree and reuse them in templates.
+
+Static assets Upload JPEG, PNG or GIF images, view and download them, and reuse stored images in templates. Files use your storage quota. 5.00 RON
+
+### PDF
+
+PDF upload, viewing, download and merging are free within your storage quota, along with the HTML editor and document PDF download. Generated document PDF preview and the visual template editor are paid.
+
+HTML Editor (v1) Free Edit templates directly as HTML code.
+
+PDF download Free Download documents as PDF, including from share links.
+
+PDF uploads & merging Free Upload one PDF at a time, use its Preview tab and download or merge PDFs. Merge 2–100 PDFs, up to 100 MB and 5,000 pages in total. No subscription or AI credits required. Original files and merged copies use your storage quota.
+
+Generated PDF preview & template editor Preview PDFs generated from document templates and edit templates visually (v2). Uploaded PDF previews are free. 10.00 RON
+
+### Misc
+
+Data sources, .ddoc import & export, and field import & linking.
+
+Misc features Reuse values from data sources, import and export .ddoc files, and import & link fields between documents. 10.00 RON
+
+### Contexto
+
+WhatsApp group assistant using the AI provider chosen in Settings. AI token usage is billed separately from the subscription.
+
+Contexto Replies, summaries and custom skills for WhatsApp groups. Use DigitaldocAI with prepaid credits or your own OpenAI key, as chosen in Settings. AI token usage costs extra: DigitaldocAI uses credits; OpenAI bills your provider account. 30.00 RON
+
+### DICOM & STL
+
+Upload medical imaging (.dcm) and 3D models (.stl) into your documents and view them in the app. Files use your storage.
+
+DICOM & STL files Upload .dcm and .stl files and open them in the built-in 2D / 3D viewer. 50.00 RON
+
+### Document scanning
+
+Scan a document image and save the extracted text as a new document. Digitaldoc does not store the image. On top of the monthly subscription, you pay for the tokens you use, whether on DigitaldocAI infrastructure or with an external model.
+
+Document scanning Scan a document image with the AI provider chosen in Settings and save the extracted text as a new document. DigitaldocAI: 0.01 RON / 1,000 tokens (10 RON / 1,000,000 tokens, input + output), from prepaid credits. External model (your own OpenAI key): the provider's rates, billed directly by the provider. 20.00 RON
+
+### AI Chat
+
+Ask questions about Digitaldoc and work with your documents using the AI provider chosen in Settings. No monthly subscription: DigitaldocAI consumes prepaid credits for the tokens you use; your own OpenAI key bills your provider account.
+
+AI Chat Free Get help with Digitaldoc, find and open your documents, and edit fields and templates in AI Chat. No AI Chat subscription is required. DigitaldocAI consumes prepaid credits for input and output tokens; with your own OpenAI key, OpenAI bills your provider account. Paid field types and the visual template editor still require their own features.
+
+### Storage
+
+Documents, uploaded and merged PDFs, DICOM & STL files and static assets share your storage. Every account has 1 GB free; your biggest tier counts.
+
+1 GB of storage Free Included with every account.
+
+5 GB of storage Store up to 5 GB of documents, uploaded and merged PDFs, DICOM & STL files and images. 15.00 RON
+
+10 GB of storage Store up to 10 GB of documents, uploaded and merged PDFs, DICOM & STL files and images. 30.00 RON
+
+20 GB of storage Store up to 20 GB of documents, uploaded and merged PDFs, DICOM & STL files and images. 50.00 RON
+
+Monthly total
+
+**0.00 RON** / month
+
+[Start in the app](https://aplicatia.digitaldoc.ro/register)
+
+Prices shown are final. We are not registered for VAT.
+
+## Questions about Digitaldoc
+
+What the free account includes and how documents, sharing, and paid features work.
+
+### What can I do for free in Digitaldoc?
+
+The free account includes document organization in folders, sharing with links, and 1 GB of storage. Upload, view, download, and merge PDFs without a subscription or AI credits. Choose the file order when merging; Digitaldoc saves a new PDF and keeps the originals.
+
+### Which files use my storage?
+
+Documents, uploaded and merged PDFs, images, and DICOM and STL files share the same storage quota. Extend the included 1 GB with a storage subscription. If you purchase multiple tiers, the largest tier applies; their capacities are not added together.
+
+### Which features require a subscription?
+
+The visual template editor, previews of PDFs generated from templates, certain field types, and additional modules are purchased separately. The HTML template editor and downloading documents as PDFs are free. The pricing calculator shows the monthly cost of selected features; review the options in the app before paying.
+
+### Do recipients need an account to open a shared link?
+
+Recipients can open a shared file or folder in their browser without a Digitaldoc account. Create the link in the app and send it to the people who need access. Check the included documents and sharing options before distributing the link.
+
+### How is AI usage billed?
+
+Chat AI access does not require a monthly subscription, but generating responses uses tokens. DigitaldocAI deducts usage from prepaid credits. With your own OpenAI key, the provider bills your account. Document scanning and Contexto have separate subscriptions, with AI usage charged in addition.
+
+## Contact
+
+Questions about a demo, pricing, or partnership? Write to us.
+
+Digitaldoc is operated by ACS ONE MEGA VISION SRL, Romanian company tax ID 44765145, Trade Register no. J40/14306/2021.
+
+For support, account questions, or privacy inquiries: [contact@mg.digitaldoc.ro](mailto:contact@mg.digitaldoc.ro)
+
+© 2026 Digitaldoc. All rights reserved.
+
+- [App](https://aplicatia.digitaldoc.ro)
+- [Sign in](https://aplicatia.digitaldoc.ro/login)
+- [Terms and conditions](https://aplicatia.digitaldoc.ro/terms)
+- [Privacy policy](https://aplicatia.digitaldoc.ro/privacy)
+- [contact@mg.digitaldoc.ro](mailto:contact@mg.digitaldoc.ro)
