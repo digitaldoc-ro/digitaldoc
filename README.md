@@ -9,6 +9,11 @@ The landing page uses the same SEO and GEO principles documented in
 content, stable canonical URLs, truthful structured data, readable static HTML,
 and generated discovery files that stay aligned with the page.
 
+The pricing script is emitted as `assets/landing.<content-hash>.js`. Publish this
+generated asset with the HTML. A new script body receives a new URL so returning
+visitors cannot execute the historical translator cached at `/i18n/landing.js`.
+Previous hashed versions are retained for still-cached HTML references.
+
 ## Edit and preview
 
 Python 3.12+ is sufficient; the build uses the standard library and requires no

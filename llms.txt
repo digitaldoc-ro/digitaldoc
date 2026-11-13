@@ -4,9 +4,9 @@
 
 ## Pages / Pagini
 
-- [Digitaldoc — Management documentar și PDF-uri gratuite](https://www.digitaldoc.ro/): Organizează documente în foldere, încarcă și combină PDF-uri gratuit și partajează prin link. Contul Digitaldoc include 1 GB de stocare gratuită.
+- [Digitaldoc — Documente, fișiere și partajare prin link](https://www.digitaldoc.ro/): Organizează documente în foldere, încarcă și combină PDF-uri gratuit și partajează prin link. Contul Digitaldoc include 1 GB de stocare gratuită.
   - [Markdown](https://www.digitaldoc.ro/index.md)
-- [Digitaldoc — Document management and free PDF merging](https://www.digitaldoc.ro/en/): Organize documents in folders, upload and merge PDFs for free, and share files with a link. Every Digitaldoc account includes 1 GB of free storage.
+- [Digitaldoc — Documents, files and link sharing](https://www.digitaldoc.ro/en/): Organize documents in folders, upload and merge PDFs for free, and share files with a link. Every Digitaldoc account includes 1 GB of free storage.
   - [Markdown](https://www.digitaldoc.ro/en/index.md)
 
 ## Product sections / Secțiuni

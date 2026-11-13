@@ -72,6 +72,18 @@ guidance](https://developers.google.com/search/docs/appearance/ai-features).
 
 ## Production HTTP rules
 
+The former runtime translator and the current pricing script initially shared
+`/i18n/landing.js`. A returning browser could combine current static HTML with
+cached translator code and older dictionaries, then replace the Romanian H1 with
+an older English heading after first paint. This combination was reproduced in
+Chromium on 14 November 2026. Both generated pages now reference the pricing-only
+script under a content-hashed URL in `assets/`, and a regression check rejects
+the historical script URL. With the old language preference and cached assets
+simulated, the corrected pages made no translation/dictionary requests and their
+H1 and language remained stable. The H1 and page-title wording is now parallel in
+Romanian and English. Publish the generated script together with the HTML; an
+already-cached HTML response can require a refresh or expiry before using it.
+
 Keep one preferred origin, `https://www.digitaldoc.ro`, using permanent redirects
 from HTTP and the apex domain. Preserve the path and query string. Also redirect
 `/index.html` to `/`, `/en/index.html` to `/en/`, and `/en` to `/en/`.

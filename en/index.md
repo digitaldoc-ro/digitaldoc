@@ -4,7 +4,7 @@ Canonical source: https://www.digitaldoc.ro/en/
 
 Cloud document management
 
-# Digitaldoc: documents, files, and sharing with a link
+# Digitaldoc: documents, files and link sharing
 
 Digitaldoc is a cloud document management app. Organize documents in folders, upload and merge PDFs for free, and share files with a link. Every account includes 1 GB of free storage.
 

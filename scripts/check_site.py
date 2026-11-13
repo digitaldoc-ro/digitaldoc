@@ -309,7 +309,10 @@ class Audit:
         scripts = '\n'.join(node.text() for node in nodes if node.tag == 'script')
         for node in nodes:
             if node.tag == 'script' and node.attrs.get('src'):
-                target = self.local_target(urljoin(canonical, node.attrs['src']))
+                script_url = urljoin(canonical, node.attrs['src'])
+                self.require(urlsplit(script_url).path != '/i18n/landing.js', path,
+                             'legacy translation script URL /i18n/landing.js can reuse cached language rewrites; use the fingerprinted pricing-only asset')
+                target = self.local_target(script_url)
                 if target and target.is_file():
                     scripts += '\n' + self.read(target)
         self.require(not re.search(r'navigator\.(?:language|languages|geolocation)|ipapi|ipinfo|geojs', scripts), path, 'URL language must not depend on browser language or geolocation')

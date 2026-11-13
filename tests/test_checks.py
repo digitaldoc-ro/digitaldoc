@@ -46,6 +46,10 @@ class SiteChecksTests(unittest.TestCase):
         self.mutate('en/index.html', english['hero']['title'], romanian['hero']['title'])
         self.assert_issue('en translation differs for hero.title', geo=False)
 
+    def test_legacy_translation_script_is_rejected(self):
+        self.mutate('index.html', '</body>', '<script src="/i18n/landing.js" defer></script>\n</body>')
+        self.assert_issue('legacy translation script URL /i18n/landing.js can reuse cached language rewrites', geo=False)
+
     def test_hidden_faq_is_rejected(self):
         self.mutate('index.html', '<section id="faq"', '<section hidden id="faq"')
         self.assert_issue('expected one visible FAQ section', seo=False)

@@ -1,5 +1,6 @@
 """Generate both languages and discovery files from one authored template."""
 from html import escape
+from hashlib import sha256
 import json
 from pathlib import Path
 import re
@@ -112,11 +113,14 @@ def metadata(tree, dictionary, language, url):
     return '\n  '.join(lines)
 
 
-def optimize(source):
+def optimize(source, landing_script):
     # No external font stylesheet or font-origin connection in the critical path.
     source = re.sub(r'\s*<link[^>]+href="https://fonts\.(?:googleapis|gstatic)\.com[^>]*>', '', source)
     fonts = (ROOT / 'assets/fonts.css').read_text(encoding='utf-8')
     source = source.replace('</head>', '<style>\n' + fonts + '\n</style>\n</head>')
+    # A returning visitor may still have the old runtime translator cached at
+    # /i18n/landing.js. New HTML must never execute that historical URL again.
+    source = source.replace('src="/i18n/landing.js"', f'src="/{landing_script}"')
     # Preserve the existing analytics configuration, loading the library after paint.
     source = source.replace('<script async src="https://www.googletagmanager.com/gtag/js?id=G-J18L89H7RC"></script>', '''<script>
     window.addEventListener('load', function () {
@@ -135,6 +139,10 @@ def optimize(source):
 
 def build():
     source = (ROOT / 'src/index.html').read_text(encoding='utf-8')
+    script = (ROOT / 'i18n/landing.js').read_bytes()
+    landing_script = f'assets/landing.{sha256(script).hexdigest()[:12]}.js'
+    # Retain previous versions for visitors whose cached HTML still names them.
+    (ROOT / landing_script).write_bytes(script)
     exports, entries = [], []
     for language, route in PAGES.items():
         dictionary = json.loads((ROOT / f'i18n/{language}.json').read_text(encoding='utf-8'))
@@ -144,7 +152,7 @@ def build():
         html = serialize(tree).replace('<!-- SEO_METADATA -->', metadata(tree, dictionary, language, url))
         if '<!-- SEO_METADATA -->' in html or '<link rel="canonical"' not in html:
             raise ValueError('Missing SEO metadata template marker')
-        write(ROOT / route / 'index.html', optimize(html))
+        write(ROOT / route / 'index.html', optimize(html, landing_script))
         main = tree.first(lambda n: n.tag == 'main')
         footer = tree.first(lambda n: n.tag == 'footer')
         markdown = ('<!-- Generated from the visible HTML; edit src/index.html and i18n/*.json. -->\n\n'
@@ -187,7 +195,7 @@ def build():
     if dist.exists():
         shutil.rmtree(dist)
     dist.mkdir()
-    for name in ('index.html', 'index.md', 'en', 'assets', 'i18n/landing.js', 'robots.txt',
+    for name in ('index.html', 'index.md', 'en', 'assets', 'robots.txt',
                  'sitemap.xml', 'llms.txt', 'llms-full.txt', '404.html', 'CNAME',
                  'digitaldoc.svg', 'favicon.svg', 'demo-document-1.png', 'google83152e7ab05f6d9b.html'):
         origin, target = ROOT / name, dist / name

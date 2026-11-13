@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Digitaldoc — Document management and free PDF merging",
+    "title": "Digitaldoc — Documents, files and link sharing",
     "description": "Organize documents in folders, upload and merge PDFs for free, and share files with a link. Every Digitaldoc account includes 1 GB of free storage."
   },
   "a11y": {
@@ -29,7 +29,7 @@
   },
   "hero": {
     "badge": "Cloud document management",
-    "title": "Digitaldoc: documents, files, and sharing with a link",
+    "title": "Digitaldoc: documents, files and link sharing",
     "lead": "Digitaldoc is a cloud document management app. Organize documents in folders, upload and merge PDFs for free, and share files with a link. Every account includes 1 GB of free storage.",
     "ctaPrimary": "Create a free account",
     "ctaSecondary": "See features",
