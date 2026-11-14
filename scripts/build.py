@@ -58,7 +58,7 @@ def metadata(tree, dictionary, language, url):
     image = SITE + 'demo-document-1.png'
     image_width, image_height = struct.unpack('>II', (ROOT / 'demo-document-1.png').read_bytes()[16:24])
     organization = {'@type': 'Organization', '@id': SITE + '#organization',
-                    'name': 'Digitaldoc', 'legalName': 'ACS ONE MEGA VISION SRL',
+                    'name': 'Digitaldoc',
                     'url': SITE, 'logo': SITE + 'digitaldoc.svg',
                     'email': 'contact@mg.digitaldoc.ro'}
     website = {'@type': 'WebSite', '@id': SITE + '#website', 'url': SITE,

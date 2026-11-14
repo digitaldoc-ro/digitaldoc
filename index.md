@@ -246,10 +246,6 @@ Accesul la Chat AI nu necesită abonament lunar, dar generarea răspunsurilor co
 
 Întrebări despre demo, prețuri sau parteneriat? Scrie-ne.
 
-Digitaldoc este operat de ACS ONE MEGA VISION SRL, CUI 44765145, nr. Reg. Com. J40/14306/2021.
-
-Pentru suport, întrebări despre cont sau confidențialitate: [contact@mg.digitaldoc.ro](mailto:contact@mg.digitaldoc.ro)
-
 © 2026 Digitaldoc. Toate drepturile rezervate.
 
 - [Aplicație](https://aplicatia.digitaldoc.ro)

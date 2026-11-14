@@ -43,7 +43,9 @@ class SiteChecksTests(unittest.TestCase):
     def test_untranslated_english_content_is_rejected(self):
         english = json.loads((self.root / 'i18n/en.json').read_text(encoding='utf-8'))
         romanian = json.loads((self.root / 'i18n/ro.json').read_text(encoding='utf-8'))
-        self.mutate('en/index.html', english['hero']['title'], romanian['hero']['title'])
+        self.mutate('en/index.html',
+                    f'<h1 data-i18n="hero.title">{english["hero"]["title"]}</h1>',
+                    f'<h1 data-i18n="hero.title">{romanian["hero"]["title"]}</h1>')
         self.assert_issue('en translation differs for hero.title', geo=False)
 
     def test_legacy_translation_script_is_rejected(self):
@@ -90,12 +92,13 @@ class SiteChecksTests(unittest.TestCase):
         self.assert_issue('local anchor is missing', geo=False)
 
     def test_fabricated_rating_is_rejected(self):
-        self.mutate('index.html', '"legalName":', '"aggregateRating": {"ratingValue": "5"}, "legalName":')
+        self.mutate('index.html', '"@type": "Organization",',
+                    '"@type": "Organization", "aggregateRating": {"ratingValue": "5"},')
         self.assert_issue('unsupported rating/review property', geo=False)
 
     def test_unsubstantiated_legal_name_is_rejected(self):
-        self.mutate('index.html', '"legalName": "ACS ONE MEGA VISION SRL"',
-                    '"legalName": "Unsubstantiated Operator SRL"')
+        self.mutate('index.html', '"@type": "Organization",',
+                    '"@type": "Organization", "legalName": "Unsubstantiated Operator SRL",')
         self.assert_issue('structured legalName must be visible', geo=False)
 
     def test_missing_sitemap_language_is_rejected(self):

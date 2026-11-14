@@ -246,10 +246,6 @@ Chat AI access does not require a monthly subscription, but generating responses
 
 Questions about a demo, pricing, or partnership? Write to us.
 
-Digitaldoc is operated by ACS ONE MEGA VISION SRL, Romanian company tax ID 44765145, Trade Register no. J40/14306/2021.
-
-For support, account questions, or privacy inquiries: [contact@mg.digitaldoc.ro](mailto:contact@mg.digitaldoc.ro)
-
 © 2026 Digitaldoc. All rights reserved.
 
 - [App](https://aplicatia.digitaldoc.ro)
