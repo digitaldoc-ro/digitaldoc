@@ -1,7 +1,7 @@
 # Digitaldoc landing page
 
 Public website: [www.digitaldoc.ro](https://www.digitaldoc.ro/). The signed-in
-application is maintained separately in `../digitaldoc-ui` and runs at
+application is maintained separately in `../ui` and runs at
 [aplicatia.digitaldoc.ro](https://aplicatia.digitaldoc.ro/).
 
 The landing page uses the same SEO and GEO principles documented in
