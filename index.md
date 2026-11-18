@@ -16,6 +16,10 @@ Digitaldoc este o aplicație de management documentar în cloud. Organizezi docu
 
 ![Captură din aplicația Digitaldoc: lista de documente, foldere și partajare](https://www.digitaldoc.ro/demo-document-1.png)
 
+## Digitaldoc într-un minut
+
+Un tur rapid al arborelui de foldere și al panoului lateral: organizezi, editezi, previzualizezi și partajezi documente. Narațiune în limba engleză.
+
 ## Tot ce ai nevoie, fără complicații
 
 Funcționalități disponibile acum în platformă — construite pentru echipe care lucrează zilnic cu documente.

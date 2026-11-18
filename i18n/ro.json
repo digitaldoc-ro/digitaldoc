@@ -37,6 +37,11 @@
     "pointLang": "Interfață în română și engleză",
     "pointPdf": "Încărcare și combinare PDF gratuite"
   },
+  "tour": {
+    "title": "Digitaldoc într-un minut",
+    "subtitle": "Un tur rapid al arborelui de foldere și al panoului lateral: organizezi, editezi, previzualizezi și partajezi documente. Narațiune în limba engleză.",
+    "videoLabel": "Video de prezentare Digitaldoc: arborele de foldere și panoul lateral"
+  },
   "features": {
     "title": "Tot ce ai nevoie, fără complicații",
     "subtitle": "Funcționalități disponibile acum în platformă — construite pentru echipe care lucrează zilnic cu documente.",

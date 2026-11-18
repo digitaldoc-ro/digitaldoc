@@ -37,6 +37,11 @@
     "pointLang": "Romanian and English interface",
     "pointPdf": "Free PDF uploads and merging"
   },
+  "tour": {
+    "title": "Digitaldoc in one minute",
+    "subtitle": "A quick tour of the folder tree and the side panel: organize, edit, preview, and share documents.",
+    "videoLabel": "Digitaldoc product tour: the folder tree and the side panel"
+  },
   "features": {
     "title": "Everything you need, without the clutter",
     "subtitle": "Features available in the platform today — built for teams that work with documents every day.",

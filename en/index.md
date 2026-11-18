@@ -16,6 +16,10 @@ Digitaldoc is a cloud document management app. Organize documents in folders, up
 
 ![Screenshot of the Digitaldoc app: documents list with folders and sharing](https://www.digitaldoc.ro/demo-document-1.png)
 
+## Digitaldoc in one minute
+
+A quick tour of the folder tree and the side panel: organize, edit, preview, and share documents.
+
 ## Everything you need, without the clutter
 
 Features available in the platform today — built for teams that work with documents every day.
