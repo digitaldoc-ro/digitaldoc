@@ -33,7 +33,9 @@ def translate(tree, dictionary, language):
     for node in tree.all(lambda n: bool(n.tag)):
         for marker, target in (('data-i18n-placeholder', 'placeholder'),
                                ('data-i18n-aria-label', 'aria-label'),
-                               ('data-i18n-alt', 'alt')):
+                               ('data-i18n-alt', 'alt'),
+                               ('data-i18n-src', 'src'),
+                               ('data-i18n-poster', 'poster')):
             if marker in node.attrs:
                 node.attrs[target] = value_at(dictionary, node.attrs[marker])
         if 'data-i18n' in node.attrs:
